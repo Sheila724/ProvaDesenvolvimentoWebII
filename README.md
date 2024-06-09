@@ -1,6 +1,6 @@
-# Rick and Morty API - Consumo de API
+# Rick and Morty API
 
-Este é um simples aplicativo Vue.js que consome a API do Rick and Morty para exibir informações sobre os personagens da série.
+Uma página Web em Vue.js que consome a API do Rick and Morty para exibir informações sobre os personagens da série.
 ![image](https://github.com/Sheila724/ProvaDesenvolvimentoWebII/assets/135647046/33f51c68-1f37-4cfc-82fb-83db1f4bd1f3)
 
 ## Funcionalidades
