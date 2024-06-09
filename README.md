@@ -50,7 +50,3 @@ Este é um simples aplicativo Vue.js que consome a API do Rick and Morty para ex
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request ou relatar problemas.
 
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
-
