@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina em Vue.js - Consumo de API Rick and Morty</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+    <button class="fetch-button" @click="fetchCharacters">Buscar Personagens</button>
+    <input v-model="searchText" type="text" placeholder="Pesquisar...">
+    <div class="character-container">
+        <ul>
+            <li v-for="character in filteredCharacters" :key="character.id" :class="getStatusClass(character.status)">
+                <div class="character-card">
+                    <img :src="character.image" alt="">
+                    <p>{{ character.name }}</p>
+                    <div v-if="character.showDetails" class="details">
+                        <p>Status: {{ character.status }}</p>
+                        <p>Espécie: {{ character.species }}</p>
+                        <p>Gênero: {{ character.gender }}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+    
+</body>
+</html>
+<script src="./index.js"></script>
